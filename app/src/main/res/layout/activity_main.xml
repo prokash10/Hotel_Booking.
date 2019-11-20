@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/slocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray"></Spinner>
+
+    <Spinner
+        android:id="@+id/sroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray"></Spinner>
+
+    <TextView
+        android:id="@+id/tvcid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="CheckIn Date"
+        android:fontFamily="serif-monospace"
+        android:background="@android:color/darker_gray"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvcheckin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="MM/DD/YY"
+        android:inputType="date"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="CheckOut Date"
+        android:fontFamily="serif-monospace"
+        android:background="@android:color/darker_gray"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvcheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="MM/DD/YY"
+        android:inputType="date"
+        android:textSize="15dp"
+        android:background="@android:color/darker_gray"></TextView>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:text="Adult"
+            android:fontFamily="casual"            android:textSize="20dp"
+            android:background="@android:color/darker_gray"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:text="Children"
+            android:fontFamily="casual"            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:text="Rooms"
+            android:fontFamily="casual"            android:textSize="20dp"></TextView>
+
+        <EditText
+            android:id="@+id/etadult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/etchildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="20dp"></EditText>
+
+        <EditText
+            android:id="@+id/etroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="20dp"></EditText>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Calculate"
+        android:textSize="20dp"></Button>
+
+
+    <TextView
+        android:id="@+id/tvlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvroomT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvDcheckin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvDcheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvnoOfroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvvat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"></TextView>
+
+
+</LinearLayout>
